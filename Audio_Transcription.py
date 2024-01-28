@@ -67,10 +67,6 @@ def transcribe():
                     )
             else:
                 return jsonify({"message": message, "status": status}), 400
-        # Creating a translate client of AWS to translate the text
-
-        # Returning the output
-        # return result.get('TranslatedText')
     except Exception as e:
         print(str(e))
 
